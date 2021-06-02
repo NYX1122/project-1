@@ -7,3 +7,8 @@
 * * Weather
 * * Trail popularity
 * * Trail type I.E. biking, horse, etc.
+
+## User Story
+* As a hiking enthusiast - 
+* I would like a web app to view hiking trails,
+* So that I can search for trails based on my own preferences
