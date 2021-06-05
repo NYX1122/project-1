@@ -1,0 +1,17 @@
+body {
+   margin: 0;
+}
+
+#moreinfo-page-header-wrapper {
+   /* background-image: url(../images/hiking-info.jpg); */
+   height: 100vh;
+   margin: 0;
+   background-repeat: no-repeat;
+   background-size: cover;
+   /* opacity: 0.5; */
+}
+
+#moreinfo-page-header {
+   margin: 0;
+   text-align: center;
+}
