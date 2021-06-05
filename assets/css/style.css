@@ -1,11 +1,10 @@
 
 * {
     font-family: "Ubuntu";
-    margin: 15px;
 }
 
 #description {
-    background-color: rgba(24, 135, 84, 0.1);
+    background-color: rgba(24, 135, 84, 0.5);
 }
 
 body {
@@ -22,19 +21,11 @@ body {
    position: absolute;
 }
 
-#moreinfo-page-header {
-   margin: 0;
-   text-align: center;
-    /* background-image: url(../images/hiking-info.jpg); */
-    height: 100vh;
-    margin: 0;
+#intro-page-body {
+    background-image: url(../images/hero.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
-    /* opacity: 0.5; */
-}
-
-.img-wrapper {
-    position: relative;
+    background-position: 50% 50%;
 }
 
 .img-responsive {
