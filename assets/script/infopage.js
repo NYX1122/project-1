@@ -1,4 +1,3 @@
-
 fetch("https://trailapi-trailapi.p.rapidapi.com/?q-activities_activity_type_name_eq=hiking&radius=25&q-state_cont=California&q-country_cont=Australia&q-city_cont=Denver&limit=10", {
 	"method": "GET",
 	"headers": {
@@ -12,3 +11,4 @@ fetch("https://trailapi-trailapi.p.rapidapi.com/?q-activities_activity_type_name
 .catch(err => {
 	console.error(err);
 });
+
