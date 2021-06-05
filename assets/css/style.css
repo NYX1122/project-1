@@ -2,7 +2,21 @@ body {
     margin: 0;
 }
 
+#hike-content {
+   /* display: flex; */
+}
+
 #moreinfo-page-header-wrapper {
+<<<<<<< HEAD
+   margin-top: 0;
+   opacity: 0.8;
+   position: absolute;
+}
+
+#moreinfo-page-header {
+   margin: 0;
+   text-align: center;
+=======
     /* background-image: url(../images/hiking-info.jpg); */
     height: 100vh;
     margin: 0;
@@ -14,6 +28,7 @@ body {
 #moreinfo-page-header {
     margin: 0;
     text-align: center;
+>>>>>>> a1b19174ba69c28c7da9344bc7fb5598e687e4a9
 }
 
 .img-wrapper {
