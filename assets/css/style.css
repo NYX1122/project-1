@@ -1,5 +1,5 @@
 body {
-   margin: 0;
+    margin: 0;
 }
 
 #hike-content {
@@ -7,6 +7,7 @@ body {
 }
 
 #moreinfo-page-header-wrapper {
+<<<<<<< HEAD
    margin-top: 0;
    opacity: 0.8;
    position: absolute;
@@ -15,10 +16,28 @@ body {
 #moreinfo-page-header {
    margin: 0;
    text-align: center;
+=======
+    /* background-image: url(../images/hiking-info.jpg); */
+    height: 100vh;
+    margin: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* opacity: 0.5; */
+}
+
+#moreinfo-page-header {
+    margin: 0;
+    text-align: center;
+>>>>>>> a1b19174ba69c28c7da9344bc7fb5598e687e4a9
 }
 
 .img-wrapper {
     position: relative;
+}
+
+.img-responsive {
+    width: 100%;
+    height: auto;
 }
 
 .img-overlay {
