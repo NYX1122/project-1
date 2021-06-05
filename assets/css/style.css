@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 * {
     font-family: "Ubuntu";
     margin: 15px;
@@ -5,4 +6,62 @@
 
 #description {
     background-color: rgba(24, 135, 84, 0.1);
+=======
+body {
+    margin: 0;
+}
+
+#hike-content {
+   /* display: flex; */
+}
+
+#moreinfo-page-header-wrapper {
+<<<<<<< HEAD
+   margin-top: 0;
+   opacity: 0.8;
+   position: absolute;
+}
+
+#moreinfo-page-header {
+   margin: 0;
+   text-align: center;
+=======
+    /* background-image: url(../images/hiking-info.jpg); */
+    height: 100vh;
+    margin: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* opacity: 0.5; */
+}
+
+#moreinfo-page-header {
+    margin: 0;
+    text-align: center;
+>>>>>>> a1b19174ba69c28c7da9344bc7fb5598e687e4a9
+}
+
+.img-wrapper {
+    position: relative;
+}
+
+.img-responsive {
+    width: 100%;
+    height: auto;
+}
+
+.img-overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+}
+
+.img-overlay:before {
+    content: ' ';
+    display: block;
+    /* adjust 'height' to position overlay content vertically */
+    height: 50%;
+>>>>>>> 13b6831e3781b1c6a8ca510b97fe1b7eaefada41
 }
