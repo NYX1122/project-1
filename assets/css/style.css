@@ -1,0 +1,8 @@
+* {
+    font-family: "Ubuntu";
+    margin: 15px;
+}
+
+#description {
+    background-color: rgba(24, 135, 84, 0.1);
+}
