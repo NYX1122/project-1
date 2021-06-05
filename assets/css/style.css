@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 body {
    margin: 0;
 }
@@ -14,4 +15,24 @@ body {
 #moreinfo-page-header {
    margin: 0;
    text-align: center;
+=======
+.img-wrapper {
+    position: relative;
+}
+
+.img-overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+}
+
+.img-overlay:before {
+    content: ' ';
+    display: block;
+    /* adjust 'height' to position overlay content vertically */
+    height: 50%;
+>>>>>>> f0ed17925ac74d2ae967ff6c4bf925af26de5800
 }
