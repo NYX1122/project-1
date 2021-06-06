@@ -13,10 +13,6 @@ function myFuntion() {
 }
 myFuntion()
 
-function lengthInput() {
-   hikeLengthEl.classList.toggle("show");
-}
-
 hikeLengthEl.addEventListener('click', lengthInput)
 
 
