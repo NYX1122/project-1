@@ -1,3 +1,12 @@
+
+* {
+    font-family: "Ubuntu";
+}
+
+#description {
+    background-color: rgba(24, 135, 84, 0.5);
+}
+
 body {
     margin: 0;
 }
@@ -20,7 +29,6 @@ body {
     margin: 0;
     background-repeat: no-repeat;
     background-size: cover;
-    /* opacity: 0.5; */
 }
 
 #moreinfo-page-header {
@@ -30,6 +38,13 @@ body {
 
 .img-wrapper {
     position: relative;
+} 
+    
+#intro-page-body {
+    background-image: url(../images/hero.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
 }
 
 .img-responsive {
