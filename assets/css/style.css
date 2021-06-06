@@ -20,19 +20,11 @@ body {
 #moreinfo-page-header {
    margin: 0;
    text-align: center;
-<<<<<<< HEAD
-    /* background-image: url(../images/hiking-info.jpg); */
-    height: 100vh;
-    margin: 0;
-    background-repeat: no-repeat;
-    background-size: cover;
-=======
    height: 100vh;
    margin: 0;
    background-repeat: no-repeat;
    background-size: cover;
    /* opacity: 0.5; */
->>>>>>> feature/moreInfoRd2
 }
 
 #moreinfo-page-header {
@@ -41,7 +33,6 @@ body {
 }
 
 .img-wrapper {
-<<<<<<< HEAD
     position: relative;
 } 
     
@@ -50,9 +41,6 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 50% 50%;
-=======
-   position: relative;
->>>>>>> feature/moreInfoRd2
 }
 
 .img-responsive {

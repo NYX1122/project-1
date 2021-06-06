@@ -1,8 +1,6 @@
-<<<<<<< HEAD
 var api = "http://api.amp.active.com/camping/campsites?"
 var apiKey = "tu627n99ahbtf6uyggdudbt9"
 var apiQuery = ""
-=======
 var hikeLengthEl = document.getElementById('hikeLength')
 var hikeDifficultyEl = document.getElementById('hikeDifficulty')
 var hikeSubmitEl = document.getElementById('hikeSubmit')
@@ -20,7 +18,6 @@ myFuntion()
 
 hikeLengthEl.addEventListener('click', lengthInput)
 
->>>>>>> feature/moreInfoRd2
 
 function myFunction() {
     fetch(
