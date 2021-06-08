@@ -4,7 +4,7 @@
 }
 
 #description {
-    background-color: rgba(24, 135, 84, 0.5);
+    background-color: rgba(24, 135, 84, 0.7);
 }
 
 body {
@@ -22,10 +22,18 @@ body {
 }
 
 #intro-page-body {
-    background-image: url(../images/hero.jpeg);
+    background-image: url(../images/hero.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 50% 50%;
+    margin-bottom: 800px;
+    padding-top: 400px;
+}
+
+@media only screen and (max-width: 400px) {
+    body {
+        padding-top: 0;
+    }
 }
 
 .img-responsive {
