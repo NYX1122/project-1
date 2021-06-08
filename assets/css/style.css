@@ -4,6 +4,8 @@
 
 #description {
     background-color: rgba(24, 135, 84, 0.7);
+    border: solid 2px rgba(120, 242, 185, 1);
+    border-radius: 25px;
 }
 
 body {
