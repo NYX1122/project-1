@@ -1,4 +1,3 @@
-
 * {
     font-family: "Ubuntu";
 }
@@ -10,31 +9,6 @@
 body {
    margin: 0;
 }
-
-#moreinfo-page-header-wrapper {
-   margin-top: 0;
-   opacity: 0.8;
-   position: absolute;
-}
-
-#moreinfo-page-header {
-   margin: 0;
-   text-align: center;
-   height: 100vh;
-   margin: 0;
-   background-repeat: no-repeat;
-   background-size: cover;
-   /* opacity: 0.5; */
-}
-
-#moreinfo-page-header {
-   margin: 0;
-   text-align: center;
-}
-
-.img-wrapper {
-    position: relative;
-} 
     
 #intro-page-body {
     background-image: url(../images/hero.jpg);
@@ -45,36 +19,17 @@ body {
     padding-top: 400px;
 }
 
-@media only screen and (max-width: 400px) {
-    body {
-        padding-top: 0;
-    }
+#info-page-body {
+    padding-top: 400px;
+    background-image: linear-gradient(to bottom right, rgba(24, 135, 84, 1), rgba(255, 244, 36, 1));
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
-.img-responsive {
-   width: 100%;
-   height: auto;
-}
-
-#more-info-page-title {
-   justify-content: center;
-   position: absolute;
-   width: 100%;
-   top: 25%;
-}
-
-.img-overlay {
-   position: absolute;
-   top: 0;
-   bottom: 0;
-   left: 0;
-   right: 0;
-   text-align: center;
-}
-
-.img-overlay:before {
-   content: ' ';
-   display: block;
-   /* adjust 'height' to position overlay content vertically */
-   height: 50%;
+#form-wrapper {
+    border: 6px;
+    border-style: solid;
+    border-color:rgba(120, 242, 185, 1);
+    border-radius: 25px;
+    background-color: white;
 }
