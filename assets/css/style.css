@@ -8,11 +8,7 @@
 }
 
 body {
-    margin: 0;
-}
-
-#hike-content {
-   /* display: flex; */
+   margin: 0;
 }
 
 #moreinfo-page-header-wrapper {
@@ -21,6 +17,25 @@ body {
    position: absolute;
 }
 
+#moreinfo-page-header {
+   margin: 0;
+   text-align: center;
+   height: 100vh;
+   margin: 0;
+   background-repeat: no-repeat;
+   background-size: cover;
+   /* opacity: 0.5; */
+}
+
+#moreinfo-page-header {
+   margin: 0;
+   text-align: center;
+}
+
+.img-wrapper {
+    position: relative;
+} 
+    
 #intro-page-body {
     background-image: url(../images/hero.jpg);
     background-repeat: no-repeat;
@@ -37,22 +52,29 @@ body {
 }
 
 .img-responsive {
-    width: 100%;
-    height: auto;
+   width: 100%;
+   height: auto;
+}
+
+#more-info-page-title {
+   justify-content: center;
+   position: absolute;
+   width: 100%;
+   top: 25%;
 }
 
 .img-overlay {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    text-align: center;
+   position: absolute;
+   top: 0;
+   bottom: 0;
+   left: 0;
+   right: 0;
+   text-align: center;
 }
 
 .img-overlay:before {
-    content: ' ';
-    display: block;
-    /* adjust 'height' to position overlay content vertically */
-    height: 50%;
+   content: ' ';
+   display: block;
+   /* adjust 'height' to position overlay content vertically */
+   height: 50%;
 }

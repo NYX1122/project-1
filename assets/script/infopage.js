@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 fetch("https://trailapi-trailapi.p.rapidapi.com/trails/explore/?lon=-112.032997&lat=40.514114", {
 	"method": "GET",
 	"headers": {
@@ -14,3 +15,5 @@ fetch("https://trailapi-trailapi.p.rapidapi.com/trails/explore/?lon=-112.032997&
 	alert("Unable to connect to servers");
 });
 
+=======
+>>>>>>> 6f3ffd30b4dd1aec185321742acde478f0285a86
