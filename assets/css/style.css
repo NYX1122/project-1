@@ -1,0 +1,37 @@
+* {
+    font-family: "Ubuntu";
+}
+
+#description {
+    background-color: rgba(24, 135, 84, 0.7);
+    border: solid 2px rgba(120, 242, 185, 1);
+    border-radius: 25px;
+}
+
+body {
+   margin: 0;
+}
+    
+#intro-page-body {
+    background-image: url(../images/hero.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+    margin-bottom: 800px;
+    padding-top: 400px;
+}
+
+#info-page-body {
+    padding-top: 400px;
+    background-image: linear-gradient(to bottom right, rgba(24, 135, 84, 1), rgba(255, 244, 36, 1));
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+#form-wrapper {
+    border: 6px;
+    border-style: solid;
+    border-color:rgba(120, 242, 185, 1);
+    border-radius: 25px;
+    background-color: white;
+}
