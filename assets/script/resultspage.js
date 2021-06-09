@@ -52,19 +52,37 @@
 // }
 // myFunction();
 
+var category = document.getElementById("results-page-header").addEventListener("input").value
+var platform = document.getElementById("results-page-header").addEventListener("input").value
+var sort = document.getElementById("results-page-header").addEventListener("input").value
+var api = "https://free-to-play-games-database.p.rapidapi.com/api/games?"
+var platformApi = "platform="
+var categoryApi = "&category="
+var sortApi = "&sort-by="
 
+function myFunction() {
+    fetch(api +
+            platformApi +
+            "platform" +
+            categoryApi +
+            "category" +
+            sortApi +
+            "sort", {
+                "method": "GET",
+                "headers": {
+                    "x-rapidapi-key": "6910575a6amshb6d83ccfb364249p15dc35jsnfee0503ca214",
+                    "x-rapidapi-host": "free-to-play-games-database.p.rapidapi.com"
+                }
+            })
+        .then(function(response) {
+            return response.json();
 
-fetch("https://free-to-play-games-database.p.rapidapi.com/api/games?platform=browser&category=mmorpg&sort-by=release-date", {
-        "method": "GET",
-        "headers": {
-            "x-rapidapi-key": "6910575a6amshb6d83ccfb364249p15dc35jsnfee0503ca214",
-            "x-rapidapi-host": "free-to-play-games-database.p.rapidapi.com"
-        }
-    })
-    .then(function(response) {
-        return response.json();
+        })
+        .then(response => {
+            console.log(response);
+        })
+        .then(function(response) {
 
-    })
-    .then(response => {
-        console.log(response);
-    })
+        })
+
+}
