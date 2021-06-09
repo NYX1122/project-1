@@ -38,14 +38,33 @@
 // var platform = "platform="
 // var category = "&category="
 // var sort = 
-function myFunction() {
-    fetch("https://www.freetogame.com/api/games?platform=browser&category=mmorpg&sort-by=release-date")
-        .then(function(userResponse) {
-            return userResponse.json();
-        })
-        .then(function(userResponse) {
-            console.log(userResponse)
-        })
-        .then
-}
-myFunction();
+// function myFunction() {
+//     mode: "no-cors"
+//     fetch("https://www.freetogame.com/api/games?platform=browser&category=mmorpg&sort-by=release-date")
+//     mode: "no-cors"
+//         .then(function(userResponse) {
+//             return userResponse.json();
+//         })
+//         .then(function(userResponse) {
+//             console.log(userResponse)
+//         })
+//         .then
+// }
+// myFunction();
+
+
+
+fetch("https://free-to-play-games-database.p.rapidapi.com/api/games?platform=browser&category=mmorpg&sort-by=release-date", {
+        "method": "GET",
+        "headers": {
+            "x-rapidapi-key": "6910575a6amshb6d83ccfb364249p15dc35jsnfee0503ca214",
+            "x-rapidapi-host": "free-to-play-games-database.p.rapidapi.com"
+        }
+    })
+    .then(function(response) {
+        return response.json();
+
+    })
+    .then(response => {
+        console.log(response);
+    })
