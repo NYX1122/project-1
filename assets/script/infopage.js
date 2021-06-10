@@ -22,31 +22,33 @@ var submitHandler = function(string) {
 	}
 }
 
-var reset = function() {
-	inputTextEl.val("");
-	if (inputTextEl.attr("placeholder") === "name") {
-		questionEl.text(questionsArr[1]);
-		inputTextEl.attr("placeholder", "address");
-	}
-	else if (inputTextEl.attr("placeholder") === "address") {
-		questionEl.text(questionsArr[2])
-		inputTextEl.attr("placeholder", "range");
-	}
-	else if (inputTextEl.attr("placeholder") === "range") {
-		questionEl.text(questionsArr[3])
-		inputTextEl.detach();
-		var selectInput = $("<select>");
-		selectInput.html("name='expertise' class='col-12 mb-3 fs-3 form-select'><option selected>Beginner</option><option>Intermediate</option><option>Advanced</option>");
-		formWrapperEl.append(selectInput);
-	}
-	else if (selectInput.attr("name") === "expertise") {
-		questionEl.text(questionsArr[4])
-		selectInput.detach();
-		formWrapperEl.append(inputTextEl);
-	}
-	else if (inputTextEl.attr("placeholder") === "date") {
-	}
-}
+
+
+// var reset = function() {
+// 	inputTextEl.val("");
+// 	if (inputTextEl.attr("placeholder") === "name") {
+// 		questionEl.text(questionsArr[1]);
+// 		inputTextEl.attr("placeholder", "address");
+// 	}
+// 	else if (inputTextEl.attr("placeholder") === "address") {
+// 		questionEl.text(questionsArr[2])
+// 		inputTextEl.attr("placeholder", "range");
+// 	}
+// 	else if (inputTextEl.attr("placeholder") === "range") {
+// 		questionEl.text(questionsArr[3])
+// 		inputTextEl.detach();
+// 		var selectInput = $("<select>");
+// 		selectInput.html("name='expertise' class='col-12 mb-3 fs-3 form-select'><option selected>Beginner</option><option>Intermediate</option><option>Advanced</option>");
+// 		formWrapperEl.append(selectInput);
+// 	}
+// 	else if (selectInput.attr("name") === "expertise") {
+// 		questionEl.text(questionsArr[4])
+// 		selectInput.detach();
+// 		formWrapperEl.append(inputTextEl);
+// 	}
+// 	else if (inputTextEl.attr("placeholder") === "date") {
+// 	}
+// }
 
 $("#next-question").on("click", function() {
 	submitHandler(inputTextEl.val());
