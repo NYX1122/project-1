@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 var inputTextEl = $("#input-text");
 var questionEl = $("#more-info-page-title");
 var formWrapperEl = $("#form-holder");
@@ -104,3 +105,6 @@ $("#next-question").on("click", function() {
 	reset();
 	console.log(trackerObj);
 });
+=======
+
+>>>>>>> 254a757a048593feccca128cb5b138c3921a99b0
