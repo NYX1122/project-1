@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 var inputTextEl = $("#input-text");
 var questionEl = $("#more-info-page-title");
 var formWrapperEl = $("#form-holder");
@@ -13,7 +12,6 @@ var submitHandler = function(string) {
 		trackerObj.name = string;
 	}
 	if (inputTextEl.attr("placeholder") === "address") {
-		trackerObj.address = string;
 		if(string === ""){
 			alert("Please enter a city name.");
 			inputTextEl.attr("placeholder", "name");
@@ -71,7 +69,7 @@ var reset = function() {
 		});
 	}
 	else if (inputTextEl.attr("placeholder") === "date") {
-		location.replace("./ResultsPage.html");
+		location.replace("./ResultsPage.html?name=" + trackerObj.name + "&address=" + trackerObj.address + "&range=" + trackerObj.range + "&expertise=" + trackerObj.expertise + "&date=" + trackerObj.date);
 	}
 };
 
@@ -81,7 +79,7 @@ var addressSubmitHandler = function(address) {
 	fetch(fetchGeocodeUrl).then(function(response) {
 		if (response.ok) {
 			response.json().then(function(data) {
-				locationData = data;
+				trackerObj.address = "lat" + data.data[0].latitude + "lon" + data.data[0].longitude;
 			});
 		}
 		else {
@@ -105,6 +103,3 @@ $("#next-question").on("click", function() {
 	reset();
 	console.log(trackerObj);
 });
-=======
-
->>>>>>> 254a757a048593feccca128cb5b138c3921a99b0
