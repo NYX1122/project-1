@@ -28,6 +28,12 @@ body {
     background-attachment: fixed;
 }
 
+#results-page-body {
+    background-image: url(../images/Results.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
 #form-wrapper {
     border: 6px;
     border-style: solid;
