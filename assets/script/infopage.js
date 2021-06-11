@@ -1,10 +1,11 @@
 var inputTextEl = $("#input-text");
 var questionEl = $("#more-info-page-title");
 var formWrapperEl = $("#form-holder");
+var formButtonEl = $("#next-question");
 var selectInput = $("<select>");
 var questionsArr = ["What is your name?", "What is your address / city?", "What is your maximum travel distance in miles?", "What is your experience level?", "What day would you like to go biking?"];
 var locationData = ""
-var trackerObj = {name: "", address: "", range: "", expertise: "", date: ""};
+var trackerObj = {name: "", address: "", range: "", expertise: ""};
 
 var submitHandler = function(string) {
 	console.log(string);
@@ -13,7 +14,7 @@ var submitHandler = function(string) {
 	}
 	if (inputTextEl.attr("placeholder") === "address") {
 		if(string === ""){
-			alert("Please enter a city name.");
+			alert("Please enter a valid city name / address.");
 			inputTextEl.attr("placeholder", "name");
 		}
 		else {
@@ -30,9 +31,6 @@ var submitHandler = function(string) {
 	}
 	if (selectInput.attr("name") === "expertise") {
 		trackerObj.expertise = string;
-	}
-	if (inputTextEl.attr("placeholder") === "date") {
-		trackerObj.date = string;
 	}
 };
 
@@ -54,22 +52,10 @@ var reset = function() {
 		selectInput.addClass("col-12 form-select form-select-lg mb-3");
 		selectInput.html("<option selected>Beginner</option><option>Intermediate</option><option>Advanced</option>");
 		$("#next-question").before(selectInput);
+		formButtonEl.html("Get Results");
 	}
 	else if (selectInput.attr("name") === "expertise") {
-		questionEl.text(questionsArr[4]);
-		selectInput.attr("name", "");
-		selectInput.detach();
-		$("#next-question").before(inputTextEl);
-		$("#next-question").text("Get Results");
-		inputTextEl.attr("placeholder", "date");
-		inputTextEl.datepicker({
-			minDate: 1,
-			onClose: function() {
-			}
-		});
-	}
-	else if (inputTextEl.attr("placeholder") === "date") {
-		location.replace("./ResultsPage.html?name=" + trackerObj.name + "&address=" + trackerObj.address + "&range=" + trackerObj.range + "&expertise=" + trackerObj.expertise + "&date=" + trackerObj.date);
+		location.replace("./ResultsPage.html?name=" + trackerObj.name + "&address=" + trackerObj.address + "&range=" + trackerObj.range + "&expertise=" + trackerObj.expertise);
 	}
 };
 
@@ -83,7 +69,7 @@ var addressSubmitHandler = function(address) {
 			});
 		}
 		else {
-			alert("City not found. Reloading.");
+			alert("City / address not found. Reloading.");
 			location.reload();
 		}
 	})
@@ -93,7 +79,7 @@ var addressSubmitHandler = function(address) {
 	});
 };
 
-$("#next-question").on("click", function() {
+formButtonEl.on("click", function() {
 	if(selectInput.attr("name") === "expertise") {
 		submitHandler(selectInput.val());
 	}
