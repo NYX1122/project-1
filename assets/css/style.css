@@ -51,5 +51,26 @@ body {
 
 #card {
     background-color: rgba(120, 242, 185, 0.7);
-    border: none;
+    border: solid 5px rgba(120, 242, 185, 1);
+    border-radius: 25px;
+}
+
+#card img {
+    background-color: rgba(24, 135, 84, 1);
+    border-radius: 25px;
+}
+
+.yes-image {
+    background-color: rgba(24, 135, 84, 0.7);
+    height: 550px;
+}
+
+#card h2 {
+    color: #454545;
+    background-color: rgba(120, 242, 185, 1);
+    border-radius: 25px;
+}
+
+#card ul li {
+    list-style-type: none;
 }
