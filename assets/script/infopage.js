@@ -60,7 +60,7 @@ var reset = function() {
 };
 
 var addressSubmitHandler = function(address) {
-    var geocodeApi = "http://api.positionstack.com/v1/forward?access_key=6a0a7bfe7991fb3b771c2cfee43f426b&query=";
+    var geocodeApi = "https://api.positionstack.com/v1/forward?access_key=6a0a7bfe7991fb3b771c2cfee43f426b&query=";
     var fetchGeocodeUrl = geocodeApi + address;
 	fetch(fetchGeocodeUrl).then(function(response) {
 		if (response.ok) {
