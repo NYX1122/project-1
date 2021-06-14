@@ -294,7 +294,7 @@ var weatherGive = function(data) {
 						}
 						var day = dayjs().add((lowest + 1), "day");
 						var bestDay = day.format("dddd");
-						cardDaySelector.text(bestDay);
+						cardDaySelector.text("Best Day: " + bestDay);
 						integerTwo++;
 						weatherSet();
 					}
