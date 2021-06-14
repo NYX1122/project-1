@@ -1,6 +1,6 @@
 var queryString = document.location.search;
 var parameters = queryString.split("=");
-var geocodeApi = "http://api.positionstack.com/v1/reverse?access_key=6a0a7bfe7991fb3b771c2cfee43f426b&query=";
+var geocodeApi = "https://api.positionstack.com/v1/reverse?access_key=6a0a7bfe7991fb3b771c2cfee43f426b&query=";
 var geocode = "";
 var trackerObj = {};
 var tracker = 0;
