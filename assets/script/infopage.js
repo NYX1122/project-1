@@ -55,6 +55,7 @@ var reset = function() {
 		formButtonEl.html("Get Results");
 	}
 	else if (selectInput.attr("name") === "expertise") {
+		localStorage.setItem(trackerObj.name, trackerObj);
 		location.replace("./ResultsPage.html?name=" + trackerObj.name + "&address=" + trackerObj.address + "&range=" + trackerObj.range + "&expertise=" + trackerObj.expertise);
 	}
 };
